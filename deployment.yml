@@ -21,7 +21,7 @@ spec:
     spec:
       containers:
       - name: demo-app
-        image: santhoshmail2u/devops:latest
+        image: nginx
         ports:
         - containerPort: 8080
 ---
