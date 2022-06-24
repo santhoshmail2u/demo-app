@@ -1,3 +1,4 @@
-FROM openjdk:11-jre-slim
-COPY target/helloworld-0.0.1-SNAPSHOT.jar /hello.jar
-CMD ["java", "-jar", "/hello.jar"]
+FROM openjdk:8-jre-alpine3.9
+COPY target/helloworld-0.0.1-SNAPSHOT.jar /demo.jar
+EXPOSE 8080
+CMD ["java", "-jar", "/demo.jar"]
